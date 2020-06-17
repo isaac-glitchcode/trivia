@@ -1,0 +1,189 @@
+*{
+    box-sizing: content-box;
+}
+body{
+    background-color: #1b1750;
+    color: aliceblue;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+#game>.container #question,
+#game>.container #answers,
+#resume{
+    align-items: center;
+    text-align: center;
+    padding-bottom: 12px;
+    border-radius: 5px;
+}
+#game>.container #question{
+    font-size: 20px;
+}
+#game>.container #answers{
+    background-color: rgba(0,0,0,.68);
+}
+#game>.container #answers .bt{
+    margin: 12px;
+    background-color: rgba(25, 83, 83, 0.69);
+    overflow: hidden;
+}
+#game>.container #answers .bt:hover{
+    
+    background-color: rgba(41, 165, 165, 0.69);
+}
+
+
+#game>.container #answers .content-btn span:nth-child(1) {
+    position: absolute;
+    top:0;
+    left: 0;
+    width:100%;
+    height: 2px;
+    background: -webkit-gradient(linear,left top, right top,from(#0c002b),to(#1779ff));
+    background: linear-gradient(to right,#0c002b,#1779ff);
+   /* animation: animate1 2s linear infinite;*/
+    display: none;
+    
+}
+@-webkit-keyframes animate1{
+    0%{
+        -webkit-transform: translateX(-100%);
+                transform: translateX(-100%);
+    }
+    100%{
+        -webkit-transform: translateX(100%);
+                transform: translateX(100%);
+    }
+}
+@keyframes animate1{
+    0%{
+        -webkit-transform: translateX(-100%);
+                transform: translateX(-100%);
+    }
+    100%{
+        -webkit-transform: translateX(100%);
+                transform: translateX(100%);
+    }
+}
+#game>.container #answers .content-btn span:nth-child(2){
+    position: absolute;
+    top:0;
+    right: 0;
+    width:2px;
+    height: 100%;
+    background: -webkit-gradient(linear,left top, left bottom,from(#0c002b),to(#1779ff));
+    background: linear-gradient(to bottom,#0c002b,#1779ff);
+   /* animation: animate2 2s linear infinite;*/
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s;
+    display: none;
+}
+@-webkit-keyframes animate2{
+    0%{
+        -webkit-transform: translateY(-100%);
+                transform: translateY(-100%);
+    }
+    100%{
+        -webkit-transform: translateY(100%);
+                transform: translateY(100%);
+    }
+}
+@keyframes animate2{
+    0%{
+        -webkit-transform: translateY(-100%);
+                transform: translateY(-100%);
+    }
+    100%{
+        -webkit-transform: translateY(100%);
+                transform: translateY(100%);
+    }
+}
+
+#game>.container #answers .content-btn span:nth-child(3){
+    position: absolute;
+    bottom:0;
+    left: 0;
+    width:100%;
+    height: 2px;
+    background: -webkit-gradient(linear,right top, left top,from(#0c002b),to(#1779ff));
+    background: linear-gradient(to left,#0c002b,#1779ff);
+   /* animation: animate3 2s linear infinite;*/
+   display: none;
+}
+@-webkit-keyframes animate3{
+    0%{
+        -webkit-transform: translateX(100%);
+                transform: translateX(100%);
+    }
+    100%{
+        -webkit-transform: translateX(-100%);
+                transform: translateX(-100%);
+    }
+}
+@keyframes animate3{
+    0%{
+        -webkit-transform: translateX(100%);
+                transform: translateX(100%);
+    }
+    100%{
+        -webkit-transform: translateX(-100%);
+                transform: translateX(-100%);
+    }
+}
+#game>.container #answers .content-btn span:nth-child(4){
+    position: absolute;
+    top:0;
+    left: 0;
+    width:2px;
+    height: 100%;
+    background: -webkit-gradient(linear,left bottom, left top,from(#0c002b),to(#1779ff));
+    background: linear-gradient(to top,#0c002b,#1779ff);
+  /*  animation: animate4 2s linear infinite;*/
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s;
+    display: none;
+}
+@-webkit-keyframes animate4{
+    0%{
+        -webkit-transform: translateY(100%);
+                transform: translateY(100%);
+    }
+    100%{
+        -webkit-transform: translateY(-100%);
+                transform: translateY(-100%);
+    }
+}
+@keyframes animate4{
+    0%{
+        -webkit-transform: translateY(100%);
+                transform: translateY(100%);
+    }
+    100%{
+        -webkit-transform: translateY(-100%);
+                transform: translateY(-100%);
+    }
+}
+
+#game>.container #answers .content-btn span:nth-child(1) {
+    display: block;
+    -webkit-animation: animate1 1s linear infinite;
+            animation: animate1 1s linear infinite;
+}
+#game>.container #answers .content-btn span:nth-child(2) {
+    display: block;
+    -webkit-animation: animate2 1s linear infinite;
+            animation: animate2 1s linear infinite; 
+    -webkit-animation-delay: .5s; 
+            animation-delay: .5s;
+}
+#game>.container #answers .content-btn span:nth-child(3) {
+    display: block;
+    -webkit-animation: animate3 1s linear infinite;
+            animation: animate3 1s linear infinite; 
+}
+#game>.container #answers .content-btn span:nth-child(4) {
+    display: block;
+    -webkit-animation: animate4 1s linear infinite;
+            animation: animate4 1s linear infinite; 
+    -webkit-animation-delay: .5s; 
+            animation-delay: .5s;
+}
